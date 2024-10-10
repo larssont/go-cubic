@@ -14,8 +14,6 @@ const (
 	axisX axis = iota
 	axisY
 	axisZ
-
-	outPath = "out/"
 )
 
 type axis int
