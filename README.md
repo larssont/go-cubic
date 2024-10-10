@@ -1,10 +1,10 @@
 # go-cubic
 
-A simple golang application for creating NxNxN cubes, applying algorithms, and generating an HTML output of the cube's state.
+A golang application for creating cubes of any size $N \times N \times N$, applying moves, and generating HTML to display the cube's state.
 
 ## Features
 
-- Create a cube of any size $N \times N$.
+- Create a cube of any size $N \times N \times N$.
 - Parse official WCA notation, including:
     - Commutators, conjugates, and parenthesis groups with factor suffixes.
 - Apply moves to the cube.
