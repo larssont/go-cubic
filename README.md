@@ -33,7 +33,7 @@ go run cmd/main.go
 
 ## Usage
 
-Creating a 4x4 cube:
+Create a 4x4 cube:
 
 ```go
 c := cube.NewCube(4)
@@ -102,7 +102,6 @@ This project is licensed under the MPL 2.0 License - see the [LICENSE.md](LICENS
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [Ana Tudor](https://www.youtube.com/watch?v=xvxXgcvUY_w)
+- [Choose an Open Source License](https://choosealicense.com)
+- [Ana Tudor](https://www.youtube.com/watch?v=xvxXgcvUY_w)
+- [WCA Regulations - Notation](https://www.worldcubeassociation.org/regulations/#article-12-notation)
