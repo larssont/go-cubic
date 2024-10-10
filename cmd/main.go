@@ -49,9 +49,9 @@ func main() {
 	}
 	group.Print()
 
-	tokens, _ := group.Expand()
+	moves, _ := group.Expand()
 
-	cube := cube.NewCube(4).ExecuteMoves(tokens...)
+	cube := cube.NewCube(4).ExecuteMoves(moves...)
 
 	GenerateHTML(cube, "cube.html")
 }
