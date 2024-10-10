@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"go-cubic/pkg/cube"
 	"html/template"
 	"os"
@@ -42,16 +41,12 @@ func init() {
 func main() {
 	input := "U2 R2 B L2 U2 D2 F' U2 F B2 L' B' D F U L' B' D R2 Fw2 D L Rw2 Fw2 L D2 F2 L' U' R' F Fw' D' R2 D B2 Rw' Uw2 R Rw' D Rw2 Uw'"
 
-	group, err := cube.ParseNotation(input)
-	if err != nil {
-		fmt.Println("Error:", err)
-		return
-	}
+	group, _ := cube.ParseNotation(input)
 	group.Print()
 
 	moves, _ := group.Expand()
+	c := cube.NewCube(4)
+	c.ExecuteMoves(moves...)
 
-	cube := cube.NewCube(4).ExecuteMoves(moves...)
-
-	GenerateHTML(cube, "cube.html")
+	GenerateHTML(c, "cube.html")
 }

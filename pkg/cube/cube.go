@@ -264,9 +264,11 @@ func (c *Cube) ExecuteMove(move Move) error {
 	return nil
 }
 
-func (c *Cube) ExecuteMoves(moves ...Move) *Cube {
+func (c *Cube) ExecuteMoves(moves ...Move) error {
 	for _, m := range moves {
-		c.ExecuteMove(m)
+		if err := c.ExecuteMove(m); err != nil {
+			return err
+		}
 	}
-	return c
+	return nil
 }
