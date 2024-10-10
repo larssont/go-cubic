@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>go-cubic</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/gnat/surreal@main/surreal.js"></script>
+</head>
+<body>
+    <div class="cube-wrapper">
+        <div class="cube-container" style="--cube-dimensions: 4;">
+            <div class="cube-face" data-face="up">
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+            </div>
+            <div class="cube-face" data-face="left">
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+            </div>
+            <div class="cube-face" data-face="front">
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+            </div>
+            <div class="cube-face" data-face="right">
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+            </div>
+            <div class="cube-face" data-face="back">
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+            </div>
+            <div class="cube-face" data-face="down">
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="y"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="r"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+                    <div class="cube-sticker" data-sticker="o"></div>
+                    <div class="cube-sticker" data-sticker="g"></div>
+                    <div class="cube-sticker" data-sticker="b"></div>
+                    <div class="cube-sticker" data-sticker="w"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    (() => {
+        const cube = me(".cube-container")
+        const K = 0.225
+
+        let drag = false, x0 = null, y0 = null;
+
+        function getEv(ev) {
+            return ev.touches ? ev.touches[0] : ev;
+        };
+
+        function lock(ev) {
+            halt(ev)
+            let e = getEv(ev);
+            drag = true;
+            x0 = e.clientX;
+            y0 = e.clientY;
+        };
+
+        function rotate(ev) {
+            if(drag) {
+                let e = getEv(ev), 
+                    x = e.clientX, 
+                    y = e.clientY, 
+                    dx = x - x0, 
+                    dy = y - y0, 
+                    d = Math.hypot(dx, dy);
+                
+                if(d) {
+                    let i = +(-dy/d).toFixed(5), 
+                        j = +(dx/d).toFixed(5), 
+                        a = +(K*d).toFixed(2), 
+                        c = `rotate3d(${[i, j, 0, a]}deg)` + getComputedStyle(cube).transform.replace('none', '');
+                    
+                    x0 = x;
+                    y0 = y;
+
+                    cube.styles({'transform': c})
+                }
+            }
+        };
+
+        function release(ev) {
+            if(drag) {
+                drag = false;
+                x0 = y0 = null;
+            }
+        };
+
+        cube
+            .on("mousedown", lock)
+            .on("touchstart", lock)
+
+        me(document)
+            .on("mousemove", rotate)
+            .on("touchmove", rotate)
+            .on("mouseup", release)
+            .on("touchend", release)
+    })()
+</script>
+
+</html>
